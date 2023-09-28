@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
+.header{
+    display: flex;
+    justify-content: space-around;
+}
+.header .title{
+    font-family: PT Serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47.7px;
+}
+.header .description b p{
+    width: 30em;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.header .description .text-description{
+    width: 430px;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+figcaption{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    display: block;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    /*grid-auto-rows: 22rem;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));*/
+}
+img{
+    width: 238px;
+    height: 341px;
+}
+.side-text{
+    display: flex;
+}
+.side-text p{
+    writing-mode: vertical-lr;
+    font-family: PT Serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, .5);
+}
+#img2 , #img5{
+    position: relative;
+    margin-top: 8rem;
+}
+@media(max-width:1000px){
+    .header{
+        display: grid;
+        justify-content: initial;
+    }
+
+    .container{
+        /*grid-template-columns: repeat(2,1fr);*/
+        grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr));
+    }
+    
+}
+@media(max-width:500px){
+    .container{
+        grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    }
+    img{
+        width: 108px;
+        height: 191px;
+    }
+    #img5{
+        margin-top: 0rem;
+    }
+    #img4 ,#img6{
+        position: relative;
+        margin-top: 8rem;
+    }
+}
